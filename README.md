@@ -8,3 +8,5 @@ Po uruchomieniu domyślną kością jest 4-ścienna.
 Przysk 'A' resetuje program do ustawień początkowych.
 Przycisk 'B' zmienia kość
 Potrząśnij aby rzucić.
+
+![Bloki Aplikacji](/RPG_Kostki.png)
