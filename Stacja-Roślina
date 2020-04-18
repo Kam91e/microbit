@@ -1,0 +1,44 @@
+let Kliknięcia = 0
+let Woda = 0
+let Temperatura = 0
+let Światło = 0
+input.onButtonPressed(Button.B, function () {
+    if (Kliknięcia == 3) {
+        basic.showString("¯\\_('-')_/¯")
+        Kliknięcia = 0
+    } else {
+        Kliknięcia += 1
+    }
+})
+basic.forever(function () {
+    if (Kliknięcia == pins.analogReadPin(AnalogPin.P0)) {
+        Woda = 0
+        led.plotBarGraph(
+        Woda,
+        700
+        )
+        if (input.buttonIsPressed(Button.A)) {
+            basic.showNumber(Woda)
+        }
+    } else if (Kliknięcia == 1) {
+        Temperatura = input.temperature()
+        led.plotBarGraph(
+        Temperatura,
+        50
+        )
+        if (input.buttonIsPressed(Button.A)) {
+            basic.showNumber(Temperatura)
+        }
+    } else if (Kliknięcia == 2) {
+        Światło = input.lightLevel()
+        led.plotBarGraph(
+        Światło,
+        368.5
+        )
+        if (input.buttonIsPressed(Button.A)) {
+            basic.showNumber(Światło)
+        }
+    } else {
+    	
+    }
+})
