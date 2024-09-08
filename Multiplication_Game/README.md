@@ -13,7 +13,7 @@ This project is a simple multiplication game for the BBC micro:bit, where player
 ## How to Play
 
 1. **Start the Game**: Press button A to start a new round. Two random numbers will appear on the screen along with the multiplication sign (`*`).
-2. **Adjust Your Guess:**:
+2. **Adjust Your Guess**:
    - Press button A to increment the tens digit.
    - Press button B to increment the ones digit.
 3. **Confirm the Answer**: Once you've entered your answer, tilt the micro:bit upwards (logo facing up) to display your input.
